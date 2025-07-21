@@ -13,6 +13,7 @@ return {
 				visible = true
 			},
 		},
+		auto_clean_after_session_restore = true
 	},
 	config = function(_, opts)
 		require("neo-tree").setup(opts)
