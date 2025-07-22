@@ -27,4 +27,8 @@ vim.keymap.set("n", "<leader>bd", ":%bd|e#<CR>", { noremap = true, silent = true
 
 -- Saving settings
 vim.keymap.set("n", "<C-s>", ":w<CR>", {})
-vim.keymap.set("n", "<C-s>", "<Esc>:w<CR>a", {})
+vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a", {})
+
+
+
+
