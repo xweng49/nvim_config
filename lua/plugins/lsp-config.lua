@@ -25,7 +25,7 @@ return {
 			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.pylsp.setup({
+			lspconfig.jedi_language_server.setup({
 				capabilities = capabilities,
 			})
 		end
