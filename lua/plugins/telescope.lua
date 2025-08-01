@@ -9,6 +9,13 @@ return {
 			local telescope = require("telescope")
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+			vim.keymap.set("n", "<leader>fh", function()
+				require("telescope.builtin").live_grep({
+					additional_args = {
+						"--hidden",
+					},
+				})
+			end, { desc = "Live grep files (including hidden)" })
 			telescope.setup({
 				defaults = {
 					mappings = {
@@ -34,7 +41,7 @@ return {
 						"--line-number",
 						"--column",
 						"--smart-case",
-						"--hidden",
+						--"--hidden",
 					},
 				},
 				extensions = {
