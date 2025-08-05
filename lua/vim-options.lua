@@ -11,10 +11,10 @@ vim.diagnostic.config({
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
-vim.api.nvim_set_option("clipboard", "unnamedplus")
+--vim.api.nvim_set_option("clipboard", "unnamedplus")
+vim.opt.clipboard = "unnamedplus"
 
 -- keymaps
-
 -- LSP settings
 vim.keymap.set("n", "<leader>ch", vim.lsp.buf.hover, {})
 vim.keymap.set("n", "<leader>cd", vim.lsp.buf.definition, {})
