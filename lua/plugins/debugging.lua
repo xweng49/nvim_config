@@ -44,14 +44,5 @@ return {
 		dap.listeners.before.event_exited.dapui_config = function()
 			dapui.open()
 		end
-
-		-- toggle breakpoint
-		vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, {})
-		-- Continue / start
-		vim.keymap.set("n", "<leader>dc", dap.continue, {})
-		-- Keymap to terminate debugging
-		vim.keymap.set("n", "<leader>dq", dap.terminate, {})
-		-- Toggle Dap UI
-		vim.keymap.set("n", "<leader>du", dapui.toggle, {})
 	end,
 }
