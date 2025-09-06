@@ -23,6 +23,9 @@ vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>", { noremap = true, silent = t
 vim.keymap.set("n", "<leader>of", ":ObsidianFollowLink<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>oo", ":Obsidian<CR>", { noremap = true, silent = true })
 
+--Oil
+vim.keymap.set("n", "<leader>`", "<cmd>:Oil --float<cr>", { noremap = true, silent = true, desc="Open Oil"})
+
 -- Telescope settings
 local builtin = require("telescope.builtin")
 local actions = require("telescope.actions")
